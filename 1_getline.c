@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
 * _getline - this reads one line from the prompt.
@@ -11,7 +11,7 @@ int _getline(data_of_program *data)
 	char buff[BUFFER_SIZE] = {'\0'};
 	static char *array_commands[10] = {NULL};
 	static char array_operators[10] = {'\0'};
-	ssize_t bytes_read, i = 0;
+	ssize_t bytes_reads, i = 0;
 
 	/* this checks if does not exist more commands in the array */
 	/* and this checks all the logical operators */
@@ -34,7 +34,7 @@ int _getline(data_of_program *data)
 		i = 0;
 		do {
 			array_commands[i] = str_duplicate(_strtok(i ? NULL : buff, "\n;"));
-			/ this checks and split for &&and || operators /
+			/* this checks and split for &&and || operators */
 			i = check_logic_ops(array_commands, i, array_operators);
 		} while (array_commands[i++]);
 	}

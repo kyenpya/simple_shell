@@ -1,17 +1,17 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef SHELL_H
+#define SHELL_H
 
 #include <stdio.h> /* this is for printf*/
 #include <unistd.h>  /* this is for fork, execve*/
 #include <stdlib.h>
 #include <string.h>  /* this is for strtok*/
-#include <stddef>
+#include <stddef.h>
 #include <errno.h> /* this is for errno and perror */
 #include <sys/types.h>  /* this is for type pid */
 #include <sys/wait.h> /* this is for wait */
 #include <sys/stat.h> /* this is for use of stat function */
 #include <signal.h>/* this is for signal management */
-#include <fcnt1.h> /* this is for open files*/
+#include <fcntl.h> /* this is for open files*/
 
 /************* This is MACROS **************/
 
@@ -247,4 +247,4 @@ char *get_alias(data_of_program *data, char *alias);
 int set_alias(char *alias_string, data_of_program *data);
 
 
-#endif /* MAIN_H */
+#endif /* SHELL_H */

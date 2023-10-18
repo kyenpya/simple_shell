@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * expand_variables -this expands variables

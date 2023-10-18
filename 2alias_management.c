@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * print_alias -this adds, remove or show aliases

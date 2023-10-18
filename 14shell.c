@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 /**
  * main - this initializes the variables of the program
  * @argc: thie number of values received from the command line

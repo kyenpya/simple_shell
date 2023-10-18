@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 int check_file(char *full_path);
 
@@ -117,7 +117,7 @@ int check_file(char *full_path)
 		}
 		return (0);
 	}
-	/ print if not exist the file /
+	/* print if not exist the file */
 	errno = 127;
 	return (127);
 }
