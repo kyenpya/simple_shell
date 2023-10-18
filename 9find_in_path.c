@@ -68,7 +68,7 @@ char **tokenize_path(data_of_program *data)
 	/* this gets the PATH value*/
 	PATH = env_get_key("PATH", data);
 	if ((PATH == NULL) || PATH[0] == '\0')
-	{ / this is path not found /
+	{ /* this is path not found */
 		return (NULL);
 	}
 
@@ -84,7 +84,7 @@ char **tokenize_path(data_of_program *data)
 	/* this reserve space for the array of pointers */
 	tokens = malloc(sizeof(char *) * counter_directories);
 
-	/ this tokenize and duplicate each token of path /
+	/* this tokenize and duplicate each token of path */
 	i = 0;
 	tokens[i] = str_duplicate(_strtok(PATH, ":"));
 	while (tokens[i++])
@@ -102,7 +102,7 @@ char **tokenize_path(data_of_program *data)
  * check_file - this checks if exists a file, if it is not a directory and
  * if it has execution permissions for permissions.
  * @full_path: the pointer to the full file name
- * Return: print 0 on success, or error code if it exists.
+ * Return: print 0 on success, or errno code if it exists.
  */
 int check_file(char *full_path)
 {

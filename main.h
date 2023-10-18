@@ -1,17 +1,17 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include  /* this is for printf*/
-#include  /* this is for fork, execve*/
-#include 
-#include  /* this is for strtok*/
-#include 
-#include  /* this is for errno and perror */
-#include  /* this is for type pid */
-#include  /* this is for wait */
-#include  /* this is for use of stat function */
-#include  /* this is for signal management */
-#include  /* this is for open files*/
+#include <stdio.h> /* this is for printf*/
+#include <unistd.h>  /* this is for fork, execve*/
+#include <stdlib.h>
+#include <string.h>  /* this is for strtok*/
+#include <stddef>
+#include <errno.h> /* this is for errno and perror */
+#include <sys/types.h>  /* this is for type pid */
+#include <sys/wait.h> /* this is for wait */
+#include <sys/stat.h> /* this is for use of stat function */
+#include <signal.h>/* this is for signal management */
+#include <fcnt1.h> /* this is for open files*/
 
 /************* This is MACROS **************/
 
@@ -30,6 +30,7 @@
  * @env: this is the copy of the environ
  * @alias_list: this is array of pointers with aliases.
  */
+
 typedef struct info
 {
 	char *program_name;
