@@ -22,13 +22,13 @@ int builtins_list(data_of_program *data)
 		{NULL, NULL}
 	};
 
-/ this walks through the structure /
+/* this walks through the structure */
 for (iterator = 0; options[iterator].builtin != NULL; iterator++)
 		{
-/ prints if there is a match between the given command and a builtin, /
+/* prints if there is a match between the given command and a builtin, */
 if (str_compare(options[iterator].builtin, data->command_name, 0))
 			{
-/ this execute the function, and return the return value of the function /
+/* this execute the function, and return the return value of the function */
 			return (options[iterator].function(data));
 			}
 /*prints if there is no match return -1 */
