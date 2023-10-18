@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * str_length - this returns the length of a string.

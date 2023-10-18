@@ -1,5 +1,5 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h> /* this is for printf*/
 #include <unistd.h>  /* this is for fork, execve*/
@@ -247,4 +247,4 @@ char *get_alias(data_of_program *data, char *alias);
 int set_alias(char *alias_string, data_of_program *data);
 
 
-#endif /* SHELL_H */
+#endif /* MAIN_H */

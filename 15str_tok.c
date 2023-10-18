@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 /**
  * _strtok - this separates strings with delimiters
  * @line: this is pointer to array we receive in getline.

@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 /**
  * tokenize - the only function separate the string using a designed delimiter
  * @data: this is pointer to the program's data
